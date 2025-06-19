@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helpero - Your Personal Peon Service</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #0483d2;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+    header img {
+      max-height: 60px;
+    }
+    .header-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .header-text h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .header-text p {
+      margin: 2px 0 0;
+      font-size: 0.9rem;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .features, .steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 30px;
+      flex: 1 1 300px;
+      text-align: center;
+    }
+    .card i {
+      font-size: 30px;
+      color: #0483d2;
+      margin-bottom: 15px;
+    }
+    .banner {
+      background: linear-gradient(to right, #0483d2, #065fa5);
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .banner h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .cta a {
+      background-color: #25D366;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .cta a img {
+      width: 22px;
+    }
+    .contact-details p {
+      font-size: 1rem;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: start;
+    }
+    .contact-details img.icon {
+      width: 20px;
+      height: 20px;
+    }
+    .social-icons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      font-size: 1.5rem;
+    }
+    .social-icons a {
+      color: #0483d2;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #065fa5;
+    }
+    .testimonial-slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 20px;
+      padding: 20px 0;
+    }
+    .testimonial {
+      flex: 0 0 300px;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      scroll-snap-align: start;
+    }
+    .testimonial p {
+      font-style: italic;
+    }
+    .testimonial h4 {
+      margin-top: 10px;
+      color: #0483d2;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 30px 20px;
+    }
+    footer .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: auto;
+    }
+    footer a {
+      color: #ffae42;
+      text-decoration: none;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+    @media (max-width: 768px) {
+      .features, .steps, .footer-inner, header {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+      .header-text {
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header data-aos="fade-down">
+    <img src="https://via.placeholder.com/60x60?text=H" alt="Helpero Logo">
+    <div class="header-text">
+      <h1>Helpero</h1>
+      <p>Aapka Personal Peon – Bas ₹10 Mein!</p>
+    </div>
+  </header>
+
+  <section class="banner" data-aos="zoom-in">
+    <h2>Need Help with Small Tasks in Office?</h2>
+    <p>Whether it's food, snacks, or a quick delivery nearby – we've got you covered!</p>
+    <div class="cta">
+      <a href="https://wa.me/918780360028">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> Book via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>What You Can Order</h2>
+    <div class="features">
+      <div class="card"><i class="fas fa-utensils"></i><h3>Food from Cafeteria</h3></div>
+      <div class="card"><i class="fas fa-cookie-bite"></i><h3>Snacks & Drinks</h3></div>
+      <div class="card"><i class="fas fa-pencil-alt"></i><h3>Stationery Items</h3></div>
+      <div class="card"><i class="fas fa-box"></i><h3>Nearby Deliverables</h3></div>
+    </div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>What Not to Order</h2>
+    <div class="features">
+      <div class="card"><i class="fas fa-truck-moving"></i><h3>Items Outside 2KM</h3></div>
+      <div class="card"><i class="fas fa-dumbbell"></i><h3>Heavy or Bulky Items</h3></div>
+    </div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>How to Book</h2>
+    <div class="steps">
+      <div class="card"><i class="fab fa-whatsapp"></i><h3>Step 1</h3><p>Send "Hi" to us on WhatsApp</p></div>
+      <div class="card"><i class="fas fa-tasks"></i><h3>Step 2</h3><p>Share your requirement</p></div>
+      <div class="card"><i class="fas fa-user-check"></i><h3>Step 3</h3><p>We assign a Helpero instantly</p></div>
+    </div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>Testimonials</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial"><p>“Helpero is a game-changer! I don’t need to leave my desk anymore.”</p><h4>- Rohan M.</h4></div>
+      <div class="testimonial"><p>“Very helpful for small errands. Affordable and fast!”</p><h4>- Priya S.</h4></div>
+      <div class="testimonial"><p>“Loved the concept. Saves time and effort in the office.”</p><h4>- Ankit D.</h4></div>
+    </div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>Contact & Location</h2>
+    <div class="features">
+      <div class="card contact-details">
+        <h3>Contact Us</h3>
+        <p><img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" class="icon"> +91 87803 60028</p>
+        <p><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="icon"> helpero.company@gmail.com</p>
+        <p><img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" class="icon"> F411, Titanium City Centre, Prahladnagar, Ahmedabad, Gujarat - 380015</p>
+        <div class="social-icons">
+          <a href="https://instagram.com/yourhelpero" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com/yourhelpero" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Our Office Location</h3>
+        <iframe src="https://maps.google.com/maps?q=F411%2C%20Titanium%20City%20Centre%2C%20Prahladnagar%2C%20Ahmedabad%2C%20Gujarat%20-%20380015&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <p>&copy; 2025 Helpero. All rights reserved.</p>
+      <p>Service Hours: Mon to Sat - 10:00 AM to 8:00 PM</p>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+</body>
+</html>
