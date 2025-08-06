@@ -225,7 +225,7 @@ h6 {
 
 /* purple button */
 .puprple_btn {
-    background-color: var(--green-color);
+    background-color: var(--primary);
     color: var(--white);
     border-radius: 10px;
     padding: 12px 30px;
@@ -246,7 +246,7 @@ h6 {
     top: 0;
     width: 0%;
     height: 100%;
-    background-color: var(--green-color);
+    background-color: var(--white);
     border-radius: 6px;
     transition: .6s all;
     z-index: -1;
@@ -257,7 +257,7 @@ h6 {
 }
 
 .puprple_btn:hover {
-    color: var(--green-color);
+    color: var(--primary);
 }
 
 
@@ -2527,14 +2527,20 @@ box-shadow: 1px 4px 8px -2px rgba(0,0,0,0.5);
 }
 
 .cta_section.new .cta_box .call_btn {
-    background-color: var(--green-color);
+    background-color: var(--secondary);
     margin-right: 15px;
 }
 
-.cta_section.new .cta_box .email_btn:hover {
-    background-color: var(--secondary);
-    transition: all ease-in-out .5s;
+.cta_section.new .cta_box .email_btn {
+    background-color: var(--green-color);
+    margin-right: 15px;
     color: var(--white);
+}
+
+.cta_section.new .cta_box .email_btn:hover {
+    background-color: var(--white);
+    transition: all ease-in-out .5s;
+    color: var(--green-color);
 }
 
 .cta_section.new .cta_box .right{
